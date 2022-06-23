@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="르탄이 - 프로필 링크">
+    <meta property="og:description" content="어서와 코딩은 처음이지?">
+    <meta property="og:image" content="공유할 이미지">
+    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>르탄이 - 프로필 링크</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+            /* 구글 웹 폰트(링크)https://fonts.google.com/?subset=korean
+            를 활용해서 다양한 폰트를 완성할 수 있어요*/
+        }
+        body {
+            background-color: #44398a;
+        }
+        .profile{
+            width: 100px;
+            height: 100px;
+
+            background-color: aliceblue;
+            border-radius: 100%;
+
+            border : 2px solid white;
+
+            background-image: url('img.jpg');
+            background-position: center;
+            background-size: cover;
+
+           /* 백그라운드 이 셋은 같이 다닌다. 
+            폰트 글 맞춤이나 편집할때는 맨 마지막에 */
+        }
+        .main {
+            color: white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+            /*margin은 여백을 미는 기능을 갖고있음 예시로
+            양쪽정렬이나 왼쪽정렬같은 기능*/
+        }
+        .sub {
+            color: white;
+            font-size: 13px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap{
+            background-color: gray;
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /*안쪽의 내용물을 가지고 움직일때에는 
+            flex라는 친구를 사용한다.*/ 
+        }
+
+            .wrap > a {
+                width: 300px;
+                height: 50px;
+
+                background-color: white;
+                border-radius: 8px;
+                /*모서리를 둥굴게 하기 위해서는 border-radius: 사용*/
+
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: #44398a;
+
+                display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    text-decoration: none;
+                    /*text-decoration은 주소창의 파란줄을 없애줄수있음*/
+
+                    box-shadow: 3px 3px 5px 0px black;
+                    /*오른쪽 밑에는 얼마나 갈거냐,
+                    5px은 꼬리의 선명도,*/
+
+
+
+            }
+            .wrap > a:hover {
+                background-color: rgb(234, 234, 255);
+                font-size: 20px;
+                /*상자의 마우스 오버하면 바뀌어진다.*/
+            }
+
+            /*<style>태그 안에서 .warp > a 처럼
+                오른쪽 화살괄호(>)로 표기하면
+                "warp으로 이름붙인 div안에 모든 a 태그에 적용해줘"
+                라는 뜻이 됩니다. 예시: .wrap > a */
+            
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">배경</h1>
+        <p class="sub">코딩중</p>
+        <a target="_blank" href="https://spartacodingclub.kr/">스파르타코딩클럽</a>
+<a target="_blank" href="https://hanghae99.spartacodingclub.kr/">항해99</a>
+<a target="_blank" href="https://chang.spartacodingclub.kr/">창업 부트캠프 창</a>
+<a target="_blank" href="https://ddingdong.spartacodingclub.kr/">띵동코딩</a>
+    </div>
+</body>
+</html>
